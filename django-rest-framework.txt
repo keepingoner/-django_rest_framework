@@ -1,0 +1,16 @@
+django document
+
+
+json.dumps（） 对datetime、imagefield类型序列化 会报错
+
+
+from django.forms.model import model_to_dict
+序列化模型
+
+
+from django.core import serializers
+json_data = serializers.serialize("json", goods)   # goods 是模型
+
+
+
+jsonresponse()   
